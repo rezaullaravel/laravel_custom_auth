@@ -49,12 +49,10 @@ class AdminController extends Controller
 
     //admin logout
     public function adminLogout(){
-        Session::forget('adminId');
-        return redirect('/admin');
+        Session::flush();
+        return redirect('/');
     }//end method
 
-
-
-
+   
 
 }//end method

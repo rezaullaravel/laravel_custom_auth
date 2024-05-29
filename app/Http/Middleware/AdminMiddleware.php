@@ -20,7 +20,7 @@ class AdminMiddleware
         if(Session::get('adminId')){
             return $next($request);
         }else{
-            return redirect('/admin');
+            return redirect('/login/admin');
         }
     }
 }
